@@ -1,0 +1,8 @@
+{
+  "name": "upsell french football",
+  "description": "Page d'upsell pour entraîneurs de football : Pack complet de préparation physique avec exercices prêts à l'emploi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
