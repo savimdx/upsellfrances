@@ -98,7 +98,7 @@ export default function SalesNotification() {
 
   return (
     <div
-      className={`fixed top-12 sm:top-16 left-1.5 z-[100] max-w-[190px] sm:max-w-[210px] rounded-lg bg-white/60 backdrop-blur-md border border-slate-200/30 shadow-md p-1.5 transition-all duration-500 transform ${
+      className={`fixed top-12 sm:top-14 left-1.5 sm:left-3 z-[100] max-w-[190px] sm:max-w-[210px] rounded-lg bg-white/95 backdrop-blur-md border border-slate-200/80 shadow-md p-1.5 transition-all duration-500 transform ${
         isVisible
           ? "opacity-100 translate-y-0 scale-100"
           : "opacity-0 -translate-y-4 scale-90 pointer-events-none"

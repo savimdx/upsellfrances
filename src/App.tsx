@@ -91,25 +91,25 @@ export default function App() {
               <ul className="space-y-3 text-xs sm:text-sm">
                 <li className="flex justify-between items-center text-slate-800">
                   <div className="flex items-center gap-2">
-                    <span className="text-emerald-600 font-bold">✓</span>
-                    <span>Commande Principale : Pack Entraîneur de Football</span>
+                    <span className="text-emerald-500 font-bold">✓</span>
+                    <span>Commande Principale : PrépA'Foot 10 Semaines</span>
                   </div>
-                  <span className="font-bold font-mono text-slate-600 whitespace-nowrap">6,90 €</span>
+                  <span className="font-bold font-mono text-slate-600 whitespace-nowrap">Réservé</span>
                 </li>
 
                 {viewMode === 'thankyou_accepted' ? (
                   <li className="flex justify-between items-center text-emerald-950 bg-emerald-50 border border-emerald-300 p-2.5 rounded-xl">
                     <div className="flex items-center gap-2">
-                      <Sparkles className="h-4 w-4 text-emerald-600 flex-shrink-0 animate-pulse" />
-                      <span className="font-bold text-slate-900">Pack Complet : Préparation Physique Football – Pack Saison</span>
+                      <Sparkles className="h-4 w-4 text-emerald-500 flex-shrink-0 animate-pulse" />
+                      <span className="font-bold text-slate-900">Upsell : Match-Ready 365 (Maintien In-Season & Récupération)</span>
                     </div>
-                    <span className="font-black font-mono text-emerald-600 whitespace-nowrap">12,48 €</span>
+                    <span className="font-black font-mono text-emerald-600 whitespace-nowrap">17,94 €</span>
                   </li>
                 ) : (
                   <li className="flex justify-between items-center text-slate-400 italic p-1 border-t border-slate-200 pt-2.5">
                     <div className="flex items-center gap-2">
                       <span className="text-slate-400">✕</span>
-                      <span>Pack Complet : Préparation Physique Football</span>
+                      <span>Protocole Match-Ready 365 In-Season</span>
                     </div>
                     <span className="text-[10px] uppercase font-mono tracking-widest font-bold text-slate-400">Non ajouté</span>
                   </li>
@@ -119,7 +119,7 @@ export default function App() {
               <div className="border-t border-slate-200 pt-3 flex justify-between items-center font-bold text-slate-900 text-sm sm:text-base">
                 <span>Total réglé :</span>
                 <span className="font-mono text-emerald-600 text-lg sm:text-xl whitespace-nowrap">
-                  {viewMode === 'thankyou_accepted' ? '19,38 €' : '6,90 €'}
+                  {viewMode === 'thankyou_accepted' ? '24,84 €' : '6,90 €'}
                 </span>
               </div>
             </div>
