@@ -105,12 +105,10 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
       
       if (checkoutElements && container) {
         try {
-          if (!container.querySelector('iframe')) {
-            checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
-          }
+          checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
           return true;
         } catch (err) {
-          console.error("Erreur lors de l'initialisation du widget Hotmart :", err);
+          console.error("Hotmart Sales Funnel init error:", err);
         }
       }
       return false;
@@ -130,12 +128,12 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
         if (mountHotmart()) {
           clearInterval(checkInterval);
         }
-      }, 150);
+      }, 100);
     }
 
     const timeout = setTimeout(() => {
       if (checkInterval) clearInterval(checkInterval);
-    }, 8000);
+    }, 10000);
 
     return () => {
       if (checkInterval) clearInterval(checkInterval);
@@ -525,8 +523,10 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
           {/* ================= 6. APPELS À L'ACTION (CTA) ================= */}
           <div className="space-y-4 pt-2">
 
-            {/* HOTMART Funnel Widget Container */}
-            <div id="hotmart-sales-funnel" className="w-full flex justify-center items-center min-h-[60px]"></div>
+            {/* HOTMART - Sales Funnel Widget */}
+            {/*- sales funnel container ---*/}
+            <div id="hotmart-sales-funnel"></div>
+            {/* HOTMART - Sales Funnel Widget */}
 
           </div>
 
