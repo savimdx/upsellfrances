@@ -513,9 +513,9 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
               Ce programme n'est proposé qu'ici aux acquéreurs de <strong>PrépA'Foot 10 Semaines</strong>. Dès que cette page sera fermée, cette opportunité disparaîtra et le protocole retournera à son tarif officiel.
             </p>
             
-            <div className="pt-2 flex items-center justify-center gap-3">
-              <span className="text-slate-400 line-through text-lg sm:text-xl font-bold font-mono">67 €</span>
-              <span className="text-3xl sm:text-4xl md:text-5xl font-black text-emerald-600 font-mono tracking-tight">17,94 €</span>
+            <div className="pt-2 flex items-center justify-center gap-3 sm:gap-4">
+              <span className="text-red-600 line-through decoration-red-600 decoration-2 text-xl sm:text-2xl md:text-3xl font-bold font-mono">67 €</span>
+              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-emerald-600 font-mono tracking-tight">17,94 €</span>
             </div>
             <span className="text-[11px] text-slate-500 uppercase font-mono block font-medium">
               Paiement unique • Accès immédiat dans ta boîte e-mail
