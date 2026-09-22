@@ -20,7 +20,7 @@ export default function App() {
 
   // Shared countdown ticking sync
   useEffect(() => {
-    document.title = "Préparation Physique Football | Offre Spéciale";
+    document.title = "+1000 Séances d’Entraînement de Football Prêtes à l’Emploi";
     const timer = setInterval(() => {
       setTimeLeftSticky((prev) => {
         if (prev <= 1) {
