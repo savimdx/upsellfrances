@@ -42,3 +42,24 @@ body {
   animation-play-state: paused;
 }
 
+/* Reset rogue margins and spacing */
+html, body, #root {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Hotmart sales funnel widget clean spacing */
+#hotmart-sales-funnel {
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#hotmart-sales-funnel iframe,
+iframe.custom-element__iframe {
+  margin: 0 auto !important;
+  max-width: 100% !important;
+  min-height: 0 !important;
+  display: block !important;
+}
+

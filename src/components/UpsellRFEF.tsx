@@ -151,7 +151,7 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
   };
 
   return (
-    <div id="upsell-page" className="relative min-h-screen bg-slate-50 text-slate-900 antialiased overflow-x-clip font-sans selection:bg-emerald-500 selection:text-white">
+    <div id="upsell-page" className="relative w-full bg-slate-50 text-slate-900 antialiased overflow-x-clip font-sans selection:bg-emerald-500 selection:text-white pb-3 sm:pb-4">
       
       {/* Background subtle light pattern */}
       <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(16,185,129,0.08),rgba(248,250,252,1))] pointer-events-none"></div>
@@ -172,7 +172,7 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
       </header>
 
       {/* Main Container */}
-      <main className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-8 sm:py-10 relative z-10 space-y-8 sm:space-y-10">
+      <main className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-4 sm:pt-5 pb-0 relative z-10 space-y-4 sm:space-y-5">
         
         {/* ================= BARRE DE PROGRESSION DU CHECKOUT (85%) ================= */}
         <section aria-label="Progression de la commande" className="bg-white border border-slate-200 rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -496,8 +496,8 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
         </section>
 
         {/* ================= 7. L'OFFRE EXCLUSIVE & PRICING BOX ================= */}
-        <section className="bg-white border-2 border-emerald-500 rounded-2xl p-6 sm:p-8 space-y-6 shadow-md relative overflow-hidden">
-          <div className="text-center space-y-3">
+        <section className="bg-white border-2 border-emerald-500 rounded-2xl p-5 sm:p-6 space-y-4 shadow-md relative overflow-hidden">
+          <div className="text-center space-y-2.5">
             <span className="text-[11px] sm:text-xs text-emerald-900 font-extrabold uppercase tracking-widest flex items-center justify-center gap-1.5 bg-emerald-50 border border-emerald-300 py-1 px-3 rounded-full mx-auto w-fit">
               <AlertTriangle className="h-4 w-4 text-emerald-700" />
               OFFRE UNIQUE DE MISE À NIVEAU • RÉSERVÉE À CETTE PAGE
@@ -508,7 +508,7 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
             </p>
             
             {/* Price section formatted */}
-            <div className="pt-2 flex items-center justify-center gap-3 sm:gap-4">
+            <div className="pt-1 flex items-center justify-center gap-3 sm:gap-4">
               <span className="text-red-600 line-through decoration-red-600 decoration-2 text-xl sm:text-2xl md:text-3xl font-bold font-mono">
                 67 €
               </span>
@@ -523,10 +523,10 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
           </div>
 
           {/* ================= 8. WIDGET HOTMART SALES FUNNEL ================= */}
-          <div className="pt-2 space-y-3">
+          <div className="pt-1 space-y-2.5">
             {/* HOTMART - Sales Funnel Widget */}
             {/*- sales funnel container ---*/}
-            <div id="hotmart-sales-funnel" className="w-full flex justify-center items-center min-h-[50px]"></div>
+            <div id="hotmart-sales-funnel" className="w-full flex justify-center items-center"></div>
             {/* HOTMART - Sales Funnel Widget */}
 
             {/* Micro reassurance under CTA */}
@@ -544,7 +544,7 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
         </section>
 
         {/* ================= 9. GARANTIE 30 JOURS SATISFAIT OU REMBOURSÉ ================= */}
-        <section className="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-7 space-y-3 text-center">
+        <section className="bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-5 space-y-2 text-center">
           <div className="flex items-center justify-center gap-2 text-emerald-800 font-bold text-xs sm:text-sm uppercase tracking-wider">
             <ShieldCheck className="h-5 w-5 text-emerald-600" />
             <span>GARANTIE INCONDITIONNELLE 100% SATISFAIT OU REMBOURSÉ (30 JOURS)</span>
@@ -554,7 +554,7 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
             Mets en application les routines de <em>Match-Ready 365</em> lors de tes premières semaines de compétition. Si tu ne constates pas un maintien spectaculaire de ton explosivité et une récupération ultra-rapide entre les matchs, envoie un simple e-mail sous 30 jours pour un remboursement complet et immédiat.
           </p>
 
-          <div className="pt-2 flex justify-center gap-6 text-[11px] font-mono text-slate-500 uppercase tracking-wider">
+          <div className="pt-1 flex justify-center gap-6 text-[11px] font-mono text-slate-500 uppercase tracking-wider">
             <span>🛡️ Zéro risque</span>
             <span>⏱️ 30 jours complets d'essai</span>
             <span>✉️ 1 simple e-mail suffit</span>
@@ -562,21 +562,6 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
         </section>
 
       </main>
-
-      {/* ================= 10. FOOTER LÉGAL ET PROFESSIONNEL ================= */}
-      <footer className="border-t border-slate-200 mt-12 py-8 bg-white text-slate-500 text-xs">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center space-y-3">
-          <p className="font-semibold text-slate-700">
-            PrépA'Foot & Match-Ready 365 • Préparation Physique & Performance Football
-          </p>
-          <p className="text-[11px] text-slate-400 max-w-lg mx-auto">
-            Ce site ne fait pas partie du site web de Facebook ou de Facebook Inc. De plus, ce site n'est PAS approuvé par Facebook de quelque manière que ce soit. Tous droits réservés.
-          </p>
-          <div className="text-[10px] text-slate-400 pt-2">
-            © {new Date().getFullYear()} • Accès sécurisé & téléchargement numérique
-          </div>
-        </div>
-      </footer>
 
     </div>
   );

@@ -50,9 +50,8 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" />
     </noscript>
 
-    <!-- Preload and load Hotmart elements script asynchronously -->
+    <!-- Preload Hotmart elements script -->
     <link rel="preload" as="script" href="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js" />
-    <script id="hotmart-checkout-elements-script" src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js" async defer></script>
     <!-- Safeguard against third-party scripts throwing "Converting circular structure to JSON" -->
     <script>
       (function() {
@@ -83,6 +82,8 @@
       })();
     </script>
 
+    <!-- HOTMART - Sales Funnel Widget Script -->
+    <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
   </head>
   <body>
     <div id="root"></div>

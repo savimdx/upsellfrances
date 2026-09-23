@@ -44,7 +44,7 @@ export default function App() {
   }, [viewMode]);
 
   return (
-    <div className="relative min-h-screen bg-white text-slate-900 antialiased overflow-x-clip selection:bg-emerald-500 selection:text-white">
+    <div className="relative w-full bg-white text-slate-900 antialiased overflow-x-clip selection:bg-emerald-500 selection:text-white">
       
       {/* Dynamic top-left small sales notifications */}
       <SalesNotification />
@@ -59,7 +59,7 @@ export default function App() {
       )}
 
       {(viewMode === 'thankyou_accepted' || viewMode === 'thankyou_declined') && (
-        <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-slate-50 relative">
+        <div className="min-h-screen flex items-center justify-center py-6 sm:py-8 px-4 sm:px-6 lg:px-8 bg-slate-50 relative">
           
           {/* Soccer field decoration overlay */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:3.5rem_3.5rem] pointer-events-none"></div>
