@@ -526,7 +526,15 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
           <div className="pt-1 space-y-2.5">
             {/* HOTMART - Sales Funnel Widget */}
             {/*- sales funnel container ---*/}
-            <div id="hotmart-sales-funnel" className="w-full flex justify-center items-center"></div>
+            <div id="hotmart-sales-funnel"></div>
+
+            {/*- script load and setup ---*/}
+            <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')`,
+              }}
+            />
             {/* HOTMART - Sales Funnel Widget */}
 
             {/* Micro reassurance under CTA */}
